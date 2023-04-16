@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>template Using Grid</title>
+    <style>
+        .container1{
+            box-shadow: 0px 0px 10px 1px cornflowerblue;
+            border-radius: 4px;
+            width: 95%;
+            height: 650px;
+            display: grid;
+            grid-template-rows: 10% 30% 15%;
+            gap:4%;
+            padding: 2%;
+
+        }
+        .box{
+            box-shadow: 0px 0px 8px rgb(239, 64, 0);
+        }
+        .box1{
+            background-color: rgb(241, 233, 144);
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        .box2{
+            background-color: red;
+            grid-row-start: 2;
+            grid-row-end: 5;
+            grid-column-start: 1;
+            grid-column-end: 2;
+
+        }
+        .box3{
+            background-color: rgb(66, 202, 239);
+            grid-row-start: 2;
+            grid-row-end: 5;
+            grid-column-start: 2;
+            grid-column-end: 5;
+
+        }
+        .box4{
+            background-color: rgb(247, 114, 244);
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 5;
+            grid-row-end: 6;
+        }
+       
+        .box3{
+            display: grid;
+            grid-template-columns: 30% 30% 30%;
+            padding: 1%;
+            gap: 2%;
+            justify-content: space-evenly;
+        }
+        .minbox{
+            border-radius: 5px;
+            background-color: #8252e8; 
+            grid-row-start: 5;
+            grid-row-end: 6;
+
+            /* code fot center text */
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #ram{
+             /* code fot center text */
+             text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <div class="box box1" id="ram"><h3>Box1</h3></div>
+        <div class="box box2" id="ram"><h3>Box2</h3></div>
+        <div class="box box3"> <!-- id="container2" -->
+            <div class="minbox"><h3>minbox1</h3></div>
+            <div class="minbox"><h3>minbox2</h3></div>
+            <div class="minbox"><h3>minbox3</h3></div>
+        </div>
+        <div class="box box4" id="ram"><h3>Box4</h3></div>
+    </div>
+</body>
+</html>
